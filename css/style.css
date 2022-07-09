@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 90%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-inline: auto;
+  padding-block: .5rem;
+}
+
+.container .contentSection {
+  height: 100%;
+  border-radius: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .contentSection .contents {
+  width: auto;
+  height: 100%;
+  margin-inline: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .contentSection .contentsCards {
+  cursor: pointer;
+  text-align: center;
+}
+
+.container .contentSection .contentsCards h3 {
+  padding: 1.2rem;
+  width: auto;
+  border: 1px solid #033d53;
+  border-radius: .5rem;
+  font-size: .85em;
+  color: #353535;
+}
+
+.container .contentSection .contentDisplay {
+  width: 80%;
+  margin-inline: auto;
+  text-align: justify;
+}
+
+.container .contentSection .contentDisplay .title {
+  text-align: center;
+  margin-block: 5rem;
+}
+
+.container .contentSection .contentDisplay .backBtn {
+  width: 30%;
+  padding: 1rem .5rem;
+  border: none;
+  border-radius: .5rem;
+  background-color: #178181;
+  color: #fff;
+  font-weight: bold;
+}
+
+.container .navigationSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-block: 1rem;
+}
+
+.container .navigationSection .paginationNumbering {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .3rem;
+}
+
+.container .navigationSection .paginationNumbering .paginationNumbers {
+  padding: .3rem .5rem;
+  border: 1px solid teal;
+  border-radius: .3rem;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.container .navigationSection .paginationNumbering .paginationNumbers:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.container .navigationSection .prevBtn,
+.container .navigationSection .nextBtn {
+  padding: .15rem .5rem;
+  margin-inline: .5rem;
+}
+
+.currentPage {
+  background-color: teal;
+  color: #fff;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */
